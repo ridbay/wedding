@@ -196,7 +196,7 @@
 		});
 	}
 
-	// LOAD GMAP
-	google.maps.event.addDomListener(window, 'load', initialize);
+	// // LOAD GMAP
+	// google.maps.event.addDomListener(window, 'load', initialize);
 	
 	
