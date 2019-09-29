@@ -1,6 +1,8 @@
 {
     "name": "R&B wedding",
     "short_name": "R&B",
+    "start_url": "index.html?utm_source=homescreen",
+    "scope" : "./",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
