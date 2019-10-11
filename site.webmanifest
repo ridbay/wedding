@@ -1,6 +1,6 @@
 {
-    "name": "R&B wedding",
-    "short_name": "R&B",
+    "name": "Barakat & Ridwan Wedding",
+    "short_name": "Wedding",
     "start_url": "index.html?utm_source=homescreen",
     "scope" : "./",
     "icons": [
@@ -20,7 +20,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#880000",
     "background_color": "#ffffff",
     "display": "standalone"
 }
