@@ -306,9 +306,7 @@ I am an Innovative optimized solution seeker. I am ambitious, adventurous, assid
                             </div>                            
                             
                             <p class="blurb animation fadeInRight text-center">
-                            	Hi, I am Barakat, an animal nutritionist and an Aquaculturist
-As an animal nutritionist, I am concerned with the dietary needs of animals; livestock, pets, and those in wildlife rehabilitation facilities.
-As an Aquaculturist, I work with teams to breed and rear fish and harvest them for the market.
+                            	Hi, I am Barakat, an animal nutritionist and an Aquaculturist. As an animal nutritionist, I am concerned with the dietary needs of animals; livestock, pets, and those in wildlife rehabilitation facilities. As an Aquaculturist, I work with teams to breed and rear fish and harvest them for the market.
 
                             </p>
                             
@@ -692,7 +690,8 @@ As an Aquaculturist, I work with teams to breed and rear fish and harvest them f
                 	 			
                                 
                                 <div class="text-center animation fadeInUp">
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.</p>
+									<p>Because your love and friendship have helped us become who we are, we joyfully invite you to share in our celebration of love and commitment.</p>
+									<p>Let us know if you'll be attending</p>
                                 </div>  
                                 
                                 <div  class="text-center">
@@ -1884,37 +1883,16 @@ As an Aquaculturist, I work with teams to breed and rear fish and harvest them f
 		<script type="text/javascript" src="js/main-slider-fade.js"></script>
 		
 		<!-- UpUp service worker Script for offline-->
-        <script src="./upup.min.js"></script>
-		<script>
-			UpUp.start({
-			  'content-url': 'offline.html',
-			  'assets': ['css/bootstrap/bootstrap.min.css', 
-			  'css/preloader.css',
-			  "css/preloader-default.css",
-			  "css/flexslider/flexslider.css",
-			  "css/animate/animate.css",
-			  "css/countdown/jquery.countdown.css",
-			  "css/magnific-popup/magnific-popup.css",
-			  "css/owlcarousel/owl.carousel.css",
-			  "css/owlcarousel/owl.theme.css",
-			  "css/fonts/fontello/css/fontello.css",
-			  "css/style.css",
-			  "js/jquery-1.11.1.min.js",
-			  "js/pace/pace.min.js",
-			  "js/bootstrap/bootstrap.js",
-			  "js/modernizr/modernizr.js",
-			  "js/devicejs/device.js",
-			  "js/tinynav/tinynav.min.js",
-			  "js/smoothscroll/jquery.smooth-scroll.js",
-			  "js/flexslider/jquery.flexslider.js",
-			  "js/sticky/jquery.sticky.js",
-			  "js/countdown/jquery.plugin.js",
-			  "js/countdown/jquery.countdown.js",
-			  "js/magnific-popup/jquery.magnific-popup.js",
-			  "js/owlcarousel/owl.carousel.js",
-			  "js/script.js"
-			]
-			});
+        <script>
+			if ('serviceWorker' in navigator) {
+			  console.log("Will the service worker register?");
+			  navigator.serviceWorker.register('service-worker.js')
+				.then(function(reg){
+				  console.log("Yes, it did.");
+				}).catch(function(err) {
+				  console.log("No it didn't. This happened: ", err)
+				});
+			}
 		  </script>
 	</body>
 
