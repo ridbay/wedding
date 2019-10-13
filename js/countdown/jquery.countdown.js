@@ -99,8 +99,10 @@
  }
 			@property [tickInterval=1] {number} The interval (seconds) between <code>onTick</code> callbacks. */
 		defaultOptions: {
-			until: new Date(2020, 12-1, 8, 13, 30),
-			since: new Date(2019, 5-1, 1),
+			// until: new Date(2020, 12-1, 8, 13, 30),
+			// since: new Date(2019, 6-1, 1),
+			// util: +10195200,
+			// since: -10195200,
 			timezone: +1,
 			serverSync: null,
 			format: 'dHMS',
